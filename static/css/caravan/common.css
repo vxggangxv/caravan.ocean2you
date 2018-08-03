@@ -7,7 +7,7 @@ body {font-family: 'Nanum Square', 'NanumSquare', 'Nanum Gothic', 'Malgun Gothic
 img {max-width: 100%;}
 a {color: inherit;}
 label {cursor: pointer;}
-
+.hidden, .skip {width: 0; height: 0; overflow: hidden; text-indent: -9999px; font-size: 0; line-height: 0; position: absolute;}
 
 /*공통스타일*/
 .contents {position: relative;}
@@ -22,13 +22,10 @@ label {cursor: pointer;}
 /*해더영역*/
 .header,
 .header .wrap {height: 84px;
-	position: absolute; top: 0; left: 0; width: 100%;
+	position: relative; top: 0; left: 0; width: 100%;
 }
 .header .wrap .area {height: 100%;}
-.header .wrap {background: #fff; z-index: 60; border-bottom: 4px solid #ececec; padding-top: 18px;
-	-webkit-box-shadow: 0 0px 12px 3px rgba(0,0,0,.3);
-	box-shadow: 0 0px 12px 3px rgba(0,0,0,.3);
-}
+.header .wrap {background: #fff; z-index: 60; border-bottom: 4px solid #ececec; padding-top: 18px;}
 .header .wrap .logo {position: absolute; height: 100%; left: 50px;}
 .header .wrap .logo > a {display: block; height: 100%; box-sizing: border-box;}
 .header .wrap .logo img {}
@@ -44,13 +41,12 @@ label {cursor: pointer;}
 */
 
 /*푸터영역*/
-.footer {position: absolute; left: 0; bottom: -195px; width: 100%; background: #fff; padding: 35px 0; color: #5c5c5c; font-size: 16px; border-top: 4px solid #bdbdbd; z-index: 1;
+.footer {position: relative; left: 0; width: 100%; background: #fff; padding: 35px 0; color: #5c5c5c; font-size: 16px; border-top: 4px solid #bdbdbd; z-index: 1; margin-top: 50px;
 	-webkit-transition: bottom 1s;
 	-o-transition: bottom 1s;
 	transition: bottom 1s;
 }
-.footer:hover {bottom: 0;}
-.footer .footerBtn {content: ""; display: block; position: absolute; width: 154px; height: 60px; left: 50%; top: -60px; margin-left: -77px; background: url(http://img.ocean2you.co.kr/caravan/common/footer_BTN.png) no-repeat; cursor: default;}
+.footer .footerBtn {content: ""; display: none; position: absolute; width: 154px; height: 60px; left: 50%; top: -60px; margin-left: -77px; background: url(http://img.ocean2you.co.kr/caravan/common/footer_BTN.png) no-repeat; cursor: default;}
 .footer .wrap .logo, .footer .wrap address {float: left;}
 .footer .wrap .logo {width: 150px; margin-top: 30px;}
 .footer .wrap address {width: 550px; line-height: 1.6; letter-spacing: 0; /*margin-top: 10px;*/}

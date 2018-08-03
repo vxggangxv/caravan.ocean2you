@@ -1,17 +1,25 @@
 $(function() {
 	
-	headerFn();
+	scrFn();
 	
 });
 
-function headerFn() {
-	var hd = $(".header"),
-		gnb = $(".header .gnb .menu a");
+function scrFn() {
+	var topBtn = $("#goTop");
 	
-	gnb.click(function() {
-		console.log('click');
-		$('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 89
-        }, 800, 'easeInOutQuad');
+	$(window).on('scroll', function() {
+		var scr = $(window).scrollTop();
+		var setTop = 920;
+		
+		if (scr < setTop) {
+			topBtn.removeClass("on");
+		}
+		if (scr >= setTop) {
+			topBtn.addClass("on");
+		}
+	});
+
+	topBtn.on("click", function() {
+		$(window).scrollTop(0);
 	});
 }

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*카라반 소개*/
+.contents .waycome {background: #f3f7f9; padding: 45px 0 0;}
+.contents .waycome .cmH2 {text-align: center;}
+.contents .waycome .cmH2 img {width: 68px;}
+.contents .waycome .cmH2:after {content: ""; display: inline-block; height: 2px; width: 18px; background: #d09e74;}
+.contents .waycome .cmH2 span {font-size: 22px; font-weight: 700; display: block; line-height: 0.8; letter-spacing: -1.5px; }
+.contents .waycome .area {}
+.contents .waycome .p-1 {font-size: 12px; margin-top: 5px; line-height: 1.5; word-break: keep-all; letter-spacing: -1px;}
+.contents .waycome .p-1.f-bd {margin-top: 10px;}
+.contents .waycome .map {position: relative; margin-top: 30px;}
+.contents .waycome .map .link {display: block; position: absolute; right: 5px; bottom: 5px; width: 40px;}

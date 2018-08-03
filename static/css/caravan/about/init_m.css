@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*카라반 소개*/
+.contents .about {background: #f3f7f9; padding: 45px 0;}
+.contents .about .cmH2 {text-align: center;}
+.contents .about .cmH2 img {width: 68px;}
+.contents .about .cmH2:after {content: ""; display: inline-block; height: 2px; width: 18px; background: #d09e74;}
+.contents .about .cmH2 span {font-size: 22px; font-weight: 700; display: block; line-height: 0.8; letter-spacing: -1.5px; }
+.contents .about .area {}
+.contents .about .area .p-1 {text-align: center; font-size: 12px; margin-top: 12px; line-height: 1.8; word-break: keep-all; letter-spacing: -1px;}
+@media (max-device-width: 320px) {
+	.contents .about .area .p-1 {font-size: 11px;}
+}
+.contents .about .area .about-list {margin: 25px auto 0; position: relative;}
+.contents .about .area .about-list > li {position: relative; float: left; width: 48.75%; box-sizing: border-box; border: 1px solid #d09e74; overflow: hidden; background: #fff;}
+.contents .about .area .about-list > li:first-child {margin-right: 2.5%;}
+.contents .about .area .about-list > li:nth-child(2) {}
+.contents .about .area .about-list > li:nth-child(3) {position: absolute; right: 0; bottom: 0;}
+/*.contents .about .area .about-list > li:nth-child(3) {margin-top: 2.5%;}*/
+.contents .about .area .about-list > li > .img {width: 100%;}
+.contents .about .area .about-list > li > img {}
