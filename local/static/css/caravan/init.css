@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*body {overflow: hidden;}*/
+body,
+.contents {overflow: hidden;}
+
+/*해더 푸터 재수정*/
+.header,
+.header .wrap {position: absolute;
+	-webkit-box-shadow: 0 0px 20px 4px rgba(0,0,0,.15);
+	box-shadow: 0 0px 20px 4px rgba(0,0,0,.15);
+}
+.footer {position: absolute; bottom: -195px; margin-top: 0;}
+.footer:hover {bottom: 0;}
+.footer .footerBtn {display: block;}
+
+/*메인비쥬얼*/
+.contents .main {position: absolute; left: 0; top: 0; width: 100%; min-width: 1280px; min-height: 920px; background: url(../../../img/caravan/bg.jpg) no-repeat center center;}
+/*
+.contents,
+.contents .main {width: 1920px; height: 947px;}
+*/
+.contents .main [class*=-area] {position: absolute;}
+.contents .main [class*=-area] > img {position: absolute;}
+.contents .main .cloud-area {width: 1200px; height: 270px; left: 50%; margin-left: -600px; top: 50%; margin-top: -150px;}
+.contents .main .cloud-area > img.cloud-left {left: -30px;}
+.contents .main .cloud-area > img.cloud-right {right: -15px; top: -20px;}
+.contents .main .bird-area {width: 1080px; height: 120px; left: 50%; margin-left: -540px; top: 50%; margin-top: -300px;}
+.contents .main .bird-area > img.bird-left {left: 10px;}
+.contents .main .bird-area > img.bird-right {right: 0;}
+.contents .main .title-area {width: 734px; height: 410px; left: 50%; top: 50%; margin-left: -367px; margin-top: -299px; text-align: center;}
+.contents .main .title-area > img {display: inline-block; position: relative;}
+.contents .main .title-area > img.title {margin-bottom: 45px;}
+.contents .main .title-area > img.ribbon {z-index: 1;}
+.contents .main .wave-area {width: 100%; top: 50%; margin-top: 200.5px;}
+.contents .main .wave-area > figure.wave {position: absolute; left: 12px; width: 100%; height: 191px; background: url(../../../img/caravan/wave.png) no-repeat center;}
+.contents .main .wave-area > img.wave {}
+.contents .main .bottom-area {width: 100%; bottom: 580px;}
+.contents .main .bottom-area > img.car {left: 50%; margin-left: -960px;}
+.contents .main .bottom-area > img.parasol {right: 50%; margin-right: -940px;}
+.contents .main .gless-area {width: 100%; left: 0; bottom: 142px;}
+.contents .main .gless-area > img.gless-left {left: 0;}
+.contents .main .gless-area > img.gless-right {right: 0;}
+
+
+/*공통스타일*/
+.modal-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
+.modal-container .cmPadding {padding: 65px 0;}
+.modal-container .cmH2 {text-align: center;}
+.modal-container .cmH2:after {content: ""; display: inline-block; height: 4px; width: 32px; background: #d09e74;}
+.modal-container .cmH2 span {font-size: 50px; font-weight: 700; display: block; margin-top: 5px; line-height: 1.2; letter-spacing: -1px;}
+.modal-container .xBtn {position: absolute; display: block; width: 50px; height: 40px; right: 10px; top: 0px; background: #d09e74; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+.modal-container .xBtn:before, .modal-container .xBtn:after {content: ""; display: block; position: absolute; width: 30px; height: 5px; background: #fff; top: 20px; right: 10px;
+}
+/*
+.modal-container .xBtn:before {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.modal-container .xBtn:after {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+*/
+.modal-container section.wrap {position: absolute; width: 1000px; height: 700px; left: 50%; margin-left: -500px; top: 50%; margin-top: -350px; background: #f3f7f9; border-radius: 4px; color: #444; top: -700px;
+	-webkit-box-shadow: 0 0 24px 6px rgba(0,0,0, 0.15);
+	box-shadow: 0 0 24px 6px rgba(0,0,0, 0.15);
+	-webkit-transition: all 1.5s;
+	-o-transition: all 1.5s;
+	transition: all 1.5s;
+}
+
+.modal-container section.wrap.active {top: 50%; margin-top: -350px;}
+
+/*카라반 소개*/
+.contents .modal-container .about {}
+.contents .modal-container .about .area .p-1 {text-align: center; font-size: 22px; margin-top: 35px; line-height: 1.8;}
+.contents .modal-container .about .area .about-list {width: 764px; margin: 55px auto 0;}
+.contents .modal-container .about .area .about-list > li {position: relative; float: left;  width: 228px; height: 228px; box-sizing: border-box; border: 4px solid #d09e74; border-radius: 50%; overflow: hidden; margin-left: 40px;}
+.contents .modal-container .about .area .about-list > li:first-child {margin-left: 0;}
+.contents .modal-container .about .area .about-list > li > img {}
+
+/*오시는 길*/
+.contents .modal-container .waycome {padding: 45px 55px;}
+.contents .modal-container .waycome .area .p-1 {font-size: 18px; line-height: 1.8;}
+.contents .modal-container .waycome .area .p-1.f-bd {margin-top: 10px;}
+.contents .modal-container .waycome .area .p-1:first-child {margin-top: 0;}
+.contents .modal-container .waycome .area .map {position: relative; margin-top: 35px;}
+.contents .modal-container .waycome .area .map .link {position: absolute; right: 10px; bottom: 10px; width: 50px;}
+.contents .modal-container .waycome .area .map .link img {width: 100%;}
